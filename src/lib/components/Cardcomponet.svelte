@@ -1,23 +1,46 @@
 <script>
-    import Card from './grid-card';
-
-    let cards = [
-        { id: 1, name: 'John Doe', avatar: 'https://via.placeholder.com/80' },
-        { id: 2, name: 'Jane Smith', avatar: 'https://via.placeholder.com/80' },
-        { id: 3, name: 'Alice Johnson', avatar: 'https://via.placeholder.com/80' }
-    ];
+    export let avatar = '';
+    export let name = '';
+    export let id = '';
 </script>
 
-<div class="card-container">
-    {#each cards as card}
-        <Card {card.id} {card.name} {card.avatar} />
-    {/each}
-</div>
-
 <style>
-    .card-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    .card {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 16px;
+        display: flex;
+        align-items: center;
         gap: 16px;
+        max-width: 300px;
+    }
+
+    .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .id {
+        color: #555;
     }
 </style>
+
+<div class="card">
+    <img class="avatar" src={avatar} alt="Avatar" />
+    <div class="info">
+        <div class="name">{name}</div>
+        <div class="id">{id}</div>
+    </div>
+</div>
