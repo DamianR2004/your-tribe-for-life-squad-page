@@ -7,6 +7,7 @@
   <ul>
     <li>
     <p>{person.name}</p>
+      <img src={person.avatar} width="150" height="150" alt="avatar"/>
   </li>
   </ul>
   {/each}
@@ -33,6 +34,13 @@ main {
             "i i i j j"
             "k k l m m";
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 ul {
   
       background-color: white;
