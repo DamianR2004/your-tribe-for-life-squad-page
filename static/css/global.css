@@ -32,6 +32,7 @@ picture img {
     height: auto;
     border-radius: 50%;
     object-fit: cover;
+    aspect-ratio: 1 / 1;
 }
 
 li {
@@ -39,12 +40,12 @@ li {
     background-color: white;
     list-style-type: none;
     border: 5px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 10px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    container-type:inline-size;
+	container-name:card;
 
       &:hover{
         transform: scale(1.1);
@@ -57,10 +58,15 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    text-align: center;
+    gap: 2rem;
     height: 100%;
     width: 100%;
+}
+
+@container card (width > 23rem){
+    li a {
+      flex-direction: row;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -87,7 +93,7 @@ a {
   "r"
   "s"
   "t"
-  "u"
+  "u";
     }
 }
 
