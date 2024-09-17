@@ -6,7 +6,6 @@ body{
     overflow-x: hidden;
     cursor: url('../kwast1.svg'), auto;
 }
-
 a:hover {
     cursor: url('../kwast2.svg'), auto;
 }
@@ -61,6 +60,7 @@ a {
     gap: 2rem;
     height: 100%;
     width: 100%;
+    text-decoration: none;
 }
 
 @container card (width > 23rem){
@@ -68,50 +68,3 @@ a {
       flex-direction: row;
     }
 }
-
-@media screen and (max-width: 500px) {
-    ul{
-        grid-template-columns: 1fr;
-        grid-template-areas:
-  "a"
-  "b"
-  "c"
-  "d"
-  "e"
-  "f"
-  "g"
-  "h"
-  "i"
-  "j"
-  "k"
-  "l"
-  "m"
-  "n"
-  "o"
-  "p"
-  "q"
-  "r"
-  "s"
-  "t"
-  "u";
-    }
-}
-
-@media screen and (min-width: 501px) and (max-width: 1000px) {
-    ul {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-            "a b"
-            "c d"
-            "e f"
-            "g h"
-            "i j"
-            "k l"
-            "m n"
-            "o p"
-            "q r"
-            "s t"
-            "u v";
-    }
-}
-

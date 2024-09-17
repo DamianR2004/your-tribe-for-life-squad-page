@@ -27,9 +27,9 @@
             </a>
             </li>
         {/each}
-        <li><p>D</p></li>
-        <li><p>C</p></li>
-        <li>E</li>
+        <li><a href="/D"><p>D</p></a></li>
+        <li><a href="/C"><p>C</p></a></li>
+        <li><a href="/E"><p>E</p></a></li>
         <li><p>Ons Team</p></li>
         <li></li>
         <li></li>
@@ -133,32 +133,52 @@
     li:nth-of-type(21) {
         grid-area: j;
     }
-    @media (width < 28em) {
-        ul{
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
-            grid-template-areas:
-         "a"
-         "b"
-         "c"
-         "d"
-         "e"
-         "f"
-         "g"
-         "h"
-         "i"
-         "j"
-         "k"
-         "l"
-         "m"
-         "n"
-         "o"
-         "p"
-         "q"
-         "r"
-         "s"
-         "t"
-         "u"
-        }
+
+    @media screen and (max-width: 500px) {
+    ul{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+  "a"
+  "b"
+  "c"
+  "d"
+  "e"
+  "f"
+  "g"
+  "h"
+  "i"
+  "j"
+  "k"
+  "l"
+  "m"
+  "n"
+  "o"
+  "p"
+  "q"
+  "r"
+  "s"
+  "t"
+  "u"
     }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "a b"
+            "c d"
+            "e f"
+            "g h"
+            "i j"
+            "k l"
+            "m n"
+            "o p"
+            "q r"
+            "s t"
+            "u v"
+    }
+}
 </style>
