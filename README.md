@@ -1,38 +1,53 @@
-# create-svelte
+# Your tribe for life - Squadpage
+<!-- Geef je project een titel en schrijf in één zin wat het is -->
+Ontwerp en maak met een team een overzicht van jouw tribe met alle online visitekaartjes, op basis van een headless CMS en een framework.
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+## 📋 Inhoudsopgave
 
-## Creating a project
+  * [Beschrijving](#-beschrijving)
+  * [Kenmerken](#-kenmerken)
+  * [Installatie](#-installatie)
+  * [Gebruik](#-gebruik)
+  * [Bronnen](#-bronnen)
+  * [Licentie](#licentie)
 
-If you're seeing this, you've probably already done this step. Congrats!
+## 📄 Beschrijving
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+Op deze squadpage staat een overzicht van onze tribe met alle leden. Vanuit de homepage kan je naar de verschillende squads gaan om specifieker te kijken. Ook is er de mogenlijkheid alleen onze teamleden te bekijken. Om meer details van een squadmember te bekijken, kun je klikken op hen kaartje in het grid. Een kaartje met nog meer details verschijnen vervolgends in beeld.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+Onze squadpage is gebasseerd op de schilderijen van Mondriaan, zoals te zien is aan de primaire kleuren en de blokkige layout. Als extra zit er een custom cursor op de website van een penseel, passend bij het thema van een Mondriaan.
 
-## Developing
+[Link naar de squadpage](https://edu.nl/ywu9t)
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## 📍 Kenmerken
+<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+Voor deze website hebben wij gebruik gemaakt van het framework `Sveltekit`. Samen met Directus halen we vervolgens de data van iedereen op.
+De belangrijkste CSS voor deze website is het Mondriaan grid, gemaakt met `grid-template-areas`.
 
-```bash
-npm run dev
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## 📲 Installatie
 
-## Building
+Volg onderstaande stappen om zelf te werken aan deze code:
 
-To create a production version of your app:
+- [x] Installeer NodeJs
+- [x] Fork/clone deze repository
+- [x] Open het in een code editor naar keuze
+- [x] Run de command npm install
+- [x] Run de command npm run dev
+- [x] Klik op de localhost link en begin met coden!
 
-```bash
-npm run build
-```
+## ✂️ Gebruik
 
-You can preview the production build with `npm run preview`.
+Om deze pagina live te bekijken kan je klikken op de [livelink](https://edu.nl/ywu9t) in de About sectie van deze repository.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Op deze squadpage kan je leden uit je tribe bekijken en informatie over hen lezen.
+
+## ℹ️ Bronnen
+
+- [SvelteKit @ kit.svelte.dev](https://kit.svelte.dev/)
+- [Svelte getting started @ MDN](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Svelte_getting_started)
+- [Getting Started with Directus and SvelteKit @ docs.directus.io](https://docs.directus.io/blog/getting-started-directus-sveltekit.html)
+
+## Licentie
+
+This project is licensed under the terms of the [MIT license](./LICENSE).
