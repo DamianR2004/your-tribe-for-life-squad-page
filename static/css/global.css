@@ -10,3 +10,42 @@ body{
 a:hover {
     cursor: url('../kwast2.svg'), auto;
 }
+
+p {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+}
+
+.picture-container {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+li {
+    background-color: white;
+    list-style-type: none;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+
+      &:hover{
+        scale: 1.1;
+        transition: .25s;
+  }

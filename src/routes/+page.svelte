@@ -42,8 +42,8 @@
         display: grid;
         margin: 0;
         padding: 0;
-        grid-template-columns: 1fr 1.2fr 0.9fr 1fr 2.9fr;
-        grid-template-rows: 1.7fr 0.3fr 1fr 1fr 1.5fr 3.5fr;
+        grid-template-columns: 1fr 1.2fr 0.9fr 1fr 2fr;
+        grid-template-rows: 1.1fr 0.3fr 1fr 1fr 1.5fr 1fr;
         grid-gap: 2px;
         grid-template-areas:
       "a  a  b  c  c"
@@ -58,47 +58,7 @@
       "t  t  u  u  s";
     }
 
-    li {
-        background-color: white;
-        list-style-type: none;
-        border: 5px solid black;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        text-align: center;
 
-          &:hover{
-            scale: 1.1;
-            transition: .25s;
-  }
-    }
-
-    p {
-        margin: 0;
-        font-size: 1.2em;
-        font-weight: bold;
-        color: black;
-    }
-
-    .picture-container {
-        width: 100%;
-        max-width: 150px;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    picture img {
-        width: 100%;
-        height: auto;
-        border-radius: 50%;
-        object-fit: cover;
-    }
-
-    /* Defining grid areas */
     li:nth-of-type(1) { grid-area: a; }
     li:nth-of-type(2) { grid-area: b; background-color: #1500b2; }
     li:nth-of-type(3) { grid-area: c; }
