@@ -3,9 +3,18 @@
 </script>
 <main>
     <ul>
-        {#each data.persons as person}
+        <li><p>D</p></li>
+        <li><p>C</p></li>
+        <li>E</li>
+        <li><p>Ons Team</p></li>
+        <li></li>
+        <li></li>
+        <li></li>
+            {#each data.persons as person}
+            
             <li>
-                <div class="picture-container">
+                <a href="/person/{person.id}" class="full-link">
+                 <div class="picture-container">
                     {#if person.avatar}
                         <picture>
                             <source srcset="https://fdnd-agency.directus.app/assets/person.avatar ?format=avif" type="image/avif" />
@@ -21,17 +30,12 @@
                             <path d="M8 16c1.333-1 2.667-1 4 0s2.667 1 4 0" fill="none" stroke="black" />
                         </svg>
                     {/if}
+                
                 </div>
                 <p>{person.name}</p>
+                </a>
             </li>
         {/each}
-        <li><p>D</p></li>
-        <li><p>C</p></li>
-        <li>E</li>
-        <li><p>Ons Team</p></li>
-        <li></li>
-        <li></li>
-        <li></li>
     </ul>
 </main>
 
@@ -150,32 +154,4 @@
         grid-area: j;
     }
 
-    @media (width < 28em) {
-        ul{
-            grid-template-columns: 1fr;
-            grid-template-areas:
-      "a"
-      "b"
-      "c"
-      "d"
-      "e"
-      "f"
-      "g"
-      "h"
-      "i"
-      "j"
-      "k"
-      "l"
-      "m"
-      "n"
-      "o"
-      "p"
-      "q"
-      "r"
-      "s"
-      "t"
-      "u"
-        }
-    }
 </style>
-

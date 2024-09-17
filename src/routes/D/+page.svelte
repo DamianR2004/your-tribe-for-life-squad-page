@@ -5,6 +5,7 @@
     <ul>
         {#each data.persons as person}
             <li>
+                <a href="/person/{person.id}" class="full-link">
                 <div class="picture-container">
                     {#if person.avatar}
                         <picture>
@@ -23,6 +24,7 @@
                     {/if}
                 </div>
                 <p>{person.name}</p>
+            </a>
             </li>
         {/each}
         <li><p>D</p></li>
