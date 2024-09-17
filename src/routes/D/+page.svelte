@@ -5,12 +5,29 @@
     <ul>
         {#each data.persons as person}
             <li>
+                <div class="picture-container">
+                    {#if person.avatar}
+                        <picture>
+                            <source srcset="{person.avatar}?format=avif" type="image/avif" />
+                            <source srcset="{person.avatar}?format=webp" type="image/webp" />
+                            <img src="{person.avatar}" alt="" on:error="{() => this.src='/path/to/fallback-avatar.svg'}" />
+                        </picture>
+                    {:else}
+                        <!-- Fallback -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" fill="#ffcc00"/>
+                            <circle cx="9" cy="10" r="1" fill="black"/>
+                            <circle cx="15" cy="10" r="1" fill="black"/>
+                            <path d="M8 16c1.333-1 2.667-1 4 0s2.667 1 4 0" fill="none" stroke="black" />
+                        </svg>
+                    {/if}
+                </div>
                 <p>{person.name}</p>
             </li>
         {/each}
         <li><p>D</p></li>
         <li><p>C</p></li>
-        <li><p>E</p></li>
+        <li>E</li>
         <li><p>Ons Team</p></li>
         <li></li>
         <li></li>
@@ -38,15 +55,6 @@
     "q  q  r  t  t"
     "u  u  u  t  t"
 
-    }
-    li {
-        background-color: white;
-        list-style-type: none;
-        border: 5px solid black;
-        &:hover{
-            scale: 1.1;
-            transition: .2s;
-        }
     }
     li:nth-of-type(1) {
         grid-area: a;
