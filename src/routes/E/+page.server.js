@@ -9,3 +9,4 @@ export async function load() {
   return {
     persons: persons.data
 }
+}
