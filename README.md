@@ -7,8 +7,8 @@ Ontwerp en maak met een team een overzicht van jouw tribe met alle online visite
   * [Beschrijving](#-beschrijving)
   * [Kenmerken](#-kenmerken)
   * [Installatie](#-installatie)
-  * [Gebruik](#-gebruik)
-  * [Bronnen](#-bronnen)
+  * [Gebruik](https://github.com/DamianR2004/your-tribe-for-life-squad-page/blob/main/README.md#%EF%B8%8F-gebruik)
+  * [Bronnen](https://github.com/DamianR2004/your-tribe-for-life-squad-page/blob/main/README.md#%E2%84%B9%EF%B8%8F-bronnen)
   * [Licentie](#licentie)
 
 ## 📄 Beschrijving
