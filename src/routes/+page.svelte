@@ -61,12 +61,12 @@
     li:nth-of-type(1) { grid-area: a; }
     li:nth-of-type(2) { grid-area: b; background-color: var(--mondrian-blue); color: var(--text-white);}
     li:nth-of-type(3) { grid-area: c; }
-    li:nth-of-type(4) { grid-area: b; background-color: var(--mondrian-yellow); color: var(--text-white);}
+    li:nth-of-type(4) { grid-area: b; background-color: var(--mondrian-yellow); color: var(--mondrian-black);}
     li:nth-of-type(5) { grid-area: e; }
-    li:nth-of-type(6) { grid-area: f; background-color: var(--mondrian-yellow); color: var(--text-white);}
+    li:nth-of-type(6) { grid-area: f; background-color: var(--mondrian-yellow); color: var(--mondrian-black);}
     li:nth-of-type(7) { grid-area: h; background-color: var(--mondrian-blue); color: var(--text-white); }
     li:nth-of-type(8) { grid-area: i; background-color: var(--mondrian-red); color: var(--text-white);}
-    li:nth-of-type(9) { grid-area: r; background-color: var(--mondrian-yellow); color: var(--text-white);}
+    li:nth-of-type(9) { grid-area: r; background-color: var(--mondrian-yellow); color: var(--mondrian-black);}
     li:nth-of-type(10) { grid-area: k; }
     li:nth-of-type(11) { grid-area: g; }
     li:nth-of-type(12) { grid-area: s; background-color: var(--mondrian-blue); color: var(--text-white);}
@@ -77,9 +77,9 @@
     li:nth-of-type(17) { grid-area: o; }
     li:nth-of-type(18) { grid-area: p; }
     li:nth-of-type(19) { grid-area: d; }
-    li:nth-of-type(20) { grid-area: j; background-color: var(--mondrian-yellow); color: var(--text-white);}
+    li:nth-of-type(20) { grid-area: j; background-color: var(--mondrian-yellow); color: var(--mondrian-black);}
     li:nth-of-type(21) { grid-area: v; }
-    li:nth-of-type(22) { grid-area: w; background-color: var(--mondrian-yellow); color: var(--text-white);}
+    li:nth-of-type(22) { grid-area: w; background-color: var(--mondrian-yellow); color: var(--mondrian-black);}
     li:nth-of-type(23) { grid-area: z; }
     li:nth-of-type(24) { grid-area: aa; }
     li:nth-of-type(23) { grid-area: ab; }

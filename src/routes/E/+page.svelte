@@ -75,7 +75,7 @@
     li:nth-of-type(4) {
         grid-area: d;
         background-color: var(--mondrian-yellow);
-        color: var(--text-white);
+        color: var(--mondrian-black);
     }
 
     li:nth-of-type(5) {
@@ -85,7 +85,7 @@
     li:nth-of-type(6) {
         grid-area: f;
         background-color: var(--mondrian-yellow);
-        color: var(--text-white);
+        color: var(--mondrian-black);
     }
 
     li:nth-of-type(7) {
@@ -95,7 +95,7 @@
     li:nth-of-type(8) {
         grid-area: s;
         background-color: var(--mondrian-yellow);
-        color: var(--text-white);
+        color: var(--mondrian-black);
     }
 
     li:nth-of-type(9) {

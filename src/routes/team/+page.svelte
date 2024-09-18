@@ -55,9 +55,9 @@
   li:nth-of-type(1) { grid-area: a; }
   li:nth-of-type(2) { grid-area: b; background-color: var(--mondrian-blue); color: var(--text-white); }
   li:nth-of-type(3) { grid-area: c; }
-  li:nth-of-type(4) { grid-area: d; background-color: var(--mondrian-yellow); color: var(--text-white); }
+  li:nth-of-type(4) { grid-area: d; background-color: var(--mondrian-yellow); color: var(--mondrian-black); }
   li:nth-of-type(5) { grid-area: e; }
-  li:nth-of-type(6) { grid-area: f; background-color: var(--mondrian-yellow); color: var(--text-white); }
+  li:nth-of-type(6) { grid-area: f; background-color: var(--mondrian-yellow); color: var(--mondrian-black); }
   li:nth-of-type(7) { grid-area: g; }
   li:nth-of-type(8) { grid-area: h; background-color: var(--mondrian-red); color: var(--text-white); }
   
