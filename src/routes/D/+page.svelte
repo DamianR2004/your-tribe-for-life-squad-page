@@ -2,6 +2,7 @@
     export let data
 </script>
 <main>
+    {#if data.persons}
     <ul>
         <li><a href="/E"><p>E</p></a></li>
         <li><a href="/"><p>C</p></a></li>
@@ -25,6 +26,10 @@
             </li>
         {/each}
     </ul>
+    {:else}
+     <!-- This will show if no people are available -->
+    <p>No data available</p>
+    {/if}
 </main>
 
 <style>

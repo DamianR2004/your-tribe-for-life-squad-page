@@ -3,6 +3,7 @@
 </script>
 
 <main>
+    {#if data.persons}
     <ul>
         {#each data.persons as person}
             <li>
@@ -26,6 +27,10 @@
         <li><a href="/E"><p>E</p></a></li>
         <li><a href="/team"><p>Ons Team</p></a></li>
     </ul>
+    {:else}
+      <!-- This will show if no people are available -->
+      <p>No data available</p>
+    {/if}      
 </main>
 
 <style>

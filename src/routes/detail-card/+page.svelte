@@ -2,6 +2,7 @@
   export let data;
 </script>
 
+{#if data.persons}
 {#each data.persons as person}
   <article class="card">
     <!-- <img src={person.avatar} alt="" class="card-image" /> -->
@@ -19,6 +20,10 @@
     </section>
   </article>
 {/each}
+{:else}
+     <!-- This will show if no people are available -->
+    <p>No data available</p>
+{/if}
 
 <style>
   * {
