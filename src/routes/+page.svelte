@@ -12,16 +12,10 @@
                         <picture>
                             <source srcset="{person.avatar}?format=avif" type="image/avif" />
                             <source srcset="{person.avatar}?format=webp" type="image/webp" />
-                            <img src="{person.avatar}" alt="{person.name}" on:error="{() => this.src='/path/to/fallback-avatar.svg'}" />
-                        </picture>
+                            <img src="{person.avatar}" width="150" height="150" alt="{person.name}" on:error={() => this.src='/path/to/fallback-avatar.svg'} />                        </picture>
                     {:else}
                         <!-- Fallback -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10" fill="#ffcc00"/>
-                            <circle cx="9" cy="10" r="1" fill="black"/>
-                            <circle cx="15" cy="10" r="1" fill="black"/>
-                            <path d="M8 16c1.333-1 2.667-1 4 0s2.667 1 4 0" fill="none" stroke="black" />
-                        </svg>
+                        <img src="/images/afbeelding.png" width="150" height="150" alt="">
                     {/if}
                 </div>
                 <p>{person.name}</p>
@@ -29,18 +23,14 @@
             </li>
         {/each}
         <li><a href="/D"><p>D</p></a></li>
-        <li><a href="/C"><p>C</p></a></li>
         <li><a href="/E"><p>E</p></a></li>
-        <li><p>Ons Team</p></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li><a href="/team"><p>Ons Team</p></a></li>
     </ul>
 </main>
 
 <style>
     ul {
-        background-color: #000000;
+        background-color: var(--mondrian-black);
         display: grid;
         margin: 0;
         padding: 0;
@@ -52,36 +42,46 @@
       "a  a  b  d  d"
       "e  e  f  d  d"
       "g  h  h  i  j"
-      "g  k  k  l  j"
+      "g  k  k  i  j"
       "m  m  n  o  o"
       "p  p  n  o  o"
-      "q  q  r  r  s"
+      "p  p  r  r  s"
       "t  t  u  u  s"
-      "t  t  u  u  s";
+      "t  t  u  u  s"
+      "v  v  w  w  w"
+      "z  z  z  aa  aa";
     }
 
 
     li:nth-of-type(1) { grid-area: a; }
-    li:nth-of-type(2) { grid-area: b; background-color: blue; }
+    li:nth-of-type(2) { grid-area: b; background-color: var(--mondrian-blue); color: var(--text-white);}
     li:nth-of-type(3) { grid-area: c; }
-    li:nth-of-type(4) { grid-area: d; background-color: yellow; }
+    li:nth-of-type(4) { grid-area: b; background-color: var(--mondrian-yellow); color: var(--text-white);}
     li:nth-of-type(5) { grid-area: e; }
-    li:nth-of-type(6) { grid-area: f; background-color: yellow; }
-    li:nth-of-type(7) { grid-area: g; }
-    li:nth-of-type(8) { grid-area: s; background-color: blue; }
-    li:nth-of-type(9) { grid-area: t; background-color: red; }
-    li:nth-of-type(10) { grid-area: u; }
-    li:nth-of-type(11) { grid-area: i; background-color: red; }
-    li:nth-of-type(12) { grid-area: k; }
-    li:nth-of-type(13) { grid-area: m; }
-    li:nth-of-type(14) { grid-area: n; background-color: blue; }
-    li:nth-of-type(15) { grid-area: o; }
-    li:nth-of-type(16) { grid-area: p; background-color: red; }
-    li:nth-of-type(17) { grid-area: q; }
-    li:nth-of-type(18) { grid-area: r; }
-    li:nth-of-type(19) { grid-area: h; background-color: blue; color: white; }
-    li:nth-of-type(20) { grid-area: l; background-color: red; color: white; }
-    li:nth-of-type(21) { grid-area: j; }
+    li:nth-of-type(6) { grid-area: f; background-color: var(--mondrian-yellow); color: var(--text-white);}
+    li:nth-of-type(7) { grid-area: h; background-color: var(--mondrian-blue); color: var(--text-white); }
+    li:nth-of-type(8) { grid-area: i; background-color: var(--mondrian-red); color: var(--text-white);}
+    li:nth-of-type(9) { grid-area: r; background-color: var(--mondrian-yellow); color: var(--text-white);}
+    li:nth-of-type(10) { grid-area: k; }
+    li:nth-of-type(11) { grid-area: g; }
+    li:nth-of-type(12) { grid-area: s; background-color: var(--mondrian-blue); color: var(--text-white);}
+    li:nth-of-type(13) { grid-area: t; background-color: var(--mondrian-red); color: var(--text-white);}
+    li:nth-of-type(14) { grid-area: u; }
+    li:nth-of-type(15) { grid-area: m; }
+    li:nth-of-type(16) { grid-area: n; background-color: var(--mondrian-blue); color: var(--text-white);}
+    li:nth-of-type(17) { grid-area: o; }
+    li:nth-of-type(18) { grid-area: p; }
+    li:nth-of-type(19) { grid-area: d; }
+    li:nth-of-type(20) { grid-area: j; background-color: var(--mondrian-yellow); color: var(--text-white);}
+    li:nth-of-type(21) { grid-area: v; }
+    li:nth-of-type(22) { grid-area: w; background-color: var(--mondrian-yellow); color: var(--text-white);}
+    li:nth-of-type(23) { grid-area: z; }
+    li:nth-of-type(24) { grid-area: aa; }
+    li:nth-of-type(23) { grid-area: ab; }
+    li:nth-of-type(23) { grid-area: ac; }
+
+
+
   
     @media screen and (max-width: 500px) {
     ul{
@@ -122,12 +122,15 @@
             "e f"
             "g h"
             "i j"
-            "k l"
+            "k k"
             "m n"
             "o p"
-            "q r"
+            "q q"
+            "r r"
             "s t"
-            "u v"
+            "u u"
+            "v w"
+            "z aa"
     }
 }
 

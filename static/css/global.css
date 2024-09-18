@@ -5,7 +5,20 @@ body{
     font-size: 25px;
     overflow-x: hidden;
     cursor: url('../kwast1.svg'), auto;
+    font-family: sans-serif;
 }
+
+:root{
+    --mondrian-yellow: #FDDE06;
+    --mondrian-red: #E70503;
+    --mondrian-blue: #0300AD;
+    --mondrian-black: #050103;
+    --mondrian-white: #EAEFE9;
+    --text-white: #ffffff;
+}
+
+
+
 a:hover {
     cursor: url('../kwast2.svg'), auto;
 }
@@ -14,7 +27,6 @@ p {
     margin: 0;
     font-size: 1.2em;
     font-weight: bold;
-    color: black;
 }
 
 .picture-container {
@@ -34,11 +46,22 @@ picture img {
     aspect-ratio: 1 / 1;
 }
 
+.amir img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 li {
     position: relative;
-    background-color: white;
+    background-color: var(--mondrian-white);
     list-style-type: none;
-    border: 5px solid black;
+    border: 5px solid var(--mondrian-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -49,6 +72,7 @@ li {
       &:hover{
         transform: scale(1.1);
         transition: .25s;
+        z-index: 1000;
   }
 }
 
@@ -61,6 +85,7 @@ a {
     height: 100%;
     width: 100%;
     text-decoration: none;
+    color: inherit;
 }
 
 @container card (width > 23rem){

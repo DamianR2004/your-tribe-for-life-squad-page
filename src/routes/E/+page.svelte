@@ -4,12 +4,8 @@
 <main>
     <ul>
         <li><a href="/D"><p>D</p></a></li>
-        <li><a href="/C"><p>C</p></a></li>
-        <li><a href="/E"><p>E</p></a></li>
-        <li><p>Ons Team</p></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li><a href="/"><p>C</p></a></li>
+        <li><a href="/team"><p>Ons Team</p></a></li>
             {#each data.persons as person}
             
             <li>
@@ -19,18 +15,12 @@
                         <picture>
                             <source srcset="https://fdnd-agency.directus.app/assets/person.avatar ?format=avif" type="image/avif" />
                             <source srcset="https://fdnd-agency.directus.app/assets/person.avatar ?format=webp" type="image/webp" />
-                            <img src="{person.avatar}" alt="{person.name}" on:error="{() => this.src='/path/to/fallback-avatar.svg'}" />
+                            <img src="{person.avatar}" width="150" height="150" alt="" on:error={() => this.src='/path/to/fallback-avatar.svg'} />
                         </picture>
                     {:else}
                         <!-- Fallback -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10" fill="#ffcc00"/>
-                            <circle cx="9" cy="10" r="1" fill="black"/>
-                            <circle cx="15" cy="10" r="1" fill="black"/>
-                            <path d="M8 16c1.333-1 2.667-1 4 0s2.667 1 4 0" fill="none" stroke="black" />
-                        </svg>
+                         <img src="/images/afbeelding.png" width="150" height="150" alt="">
                     {/if}
-                
                 </div>
                 <p>{person.name}</p>
                 </a>
@@ -41,24 +31,25 @@
 
 <style>
     ul {
-        background-color: #000000;
+        background-color: var(--mondrian-black);
         display: grid;
         margin: 0;
         padding: 0;
-        grid-template-columns: 4fr 7fr 6fr 3fr 8fr;
-	    grid-template-rows:  8fr 9fr 5fr 9fr 8fr   9fr 8fr 6fr 7fr 9fr;
+        grid-template-columns: 1fr 1.2fr 0.9fr 1fr 2fr;
+        grid-template-rows: 1.1fr 0.3fr 1fr 1fr 1.5fr 1fr;
         grid-gap: 2px;
         grid-template-areas:
    "a  a  b  c  c"
    "a  a  b  d  d"
    "e  e  f  d  d"
-   "g  h  h  i  j"
+   "g  h  f  i  j"
    "g  k  k  l  j"
    "m  m  n  o  o"
    "p  p  n  o  o"
    "q  q  r  r  s"
    "t  t  u  u  s"
-   "t  t  u  u  s"
+   "v  v  u  u  s"
+   "v  v  w  w  w"
 
     }
 
@@ -68,7 +59,8 @@
 
     li:nth-of-type(2) {
         grid-area: b;
-        background-color: #1500b2;
+        background-color: var(--mondrian-blue);
+        color: var(--text-white);
     }
 
     li:nth-of-type(3) {
@@ -77,7 +69,8 @@
 
     li:nth-of-type(4) {
         grid-area: d;
-        background-color: yellow;
+        background-color: var(--mondrian-yellow);
+        color: var(--text-white);
     }
 
     li:nth-of-type(5) {
@@ -86,7 +79,8 @@
 
     li:nth-of-type(6) {
         grid-area: f;
-        background-color: yellow;
+        background-color: var(--mondrian-yellow);
+        color: var(--text-white);
     }
 
     li:nth-of-type(7) {
@@ -95,12 +89,14 @@
 
     li:nth-of-type(8) {
         grid-area: s;
-        background-color: #1500b2;
+        background-color: var(--mondrian-yellow);
+        color: var(--text-white);
     }
 
     li:nth-of-type(9) {
         grid-area: t;
-        background-color: red;
+        background-color: var(--mondrian-red);
+        color: var(--text-white);
     }
 
     li:nth-of-type(10) {
@@ -109,7 +105,8 @@
 
     li:nth-of-type(11) {
         grid-area: i;
-        background-color: red;
+        background-color: var(--mondrian-red);
+        color: var(--text-white);
     }
 
     li:nth-of-type(12) {
@@ -122,7 +119,8 @@
 
     li:nth-of-type(14) {
         grid-area: n;
-        background-color: blue;
+        background-color: var(--mondrian-blue);
+        color: var(--text-white);
     }
 
     li:nth-of-type(15) {
@@ -130,7 +128,8 @@
     }
     li:nth-of-type(16) {
         grid-area: p;
-        background-color: red;
+        background-color: var(--mondrian-red);
+        color: var(--text-white);
     }
     li:nth-of-type(17) {
         grid-area: q;
@@ -141,19 +140,34 @@
     }
     li:nth-of-type(19) {
         grid-area: s;
-        background-color: blue;
-        color: white;
+        background-color: var(--mondrian-blue);
+        color: var(--text-white);
     }
     li:nth-of-type(20) {
         grid-area: l;
-        background-color: red;
-        color: white;
+        background-color: var(--mondrian-red);
+        color: var(--text-white);
     }
 
     li:nth-of-type(21) {
         grid-area: j;
     }
 
+    li:nth-of-type(22) {
+        grid-area: t;
+    }
+
+    li:nth-of-type(22) {
+        grid-area: u;
+    }
+
+    li:nth-of-type(23) {
+        grid-area: v;
+    }
+
+    li:nth-of-type(24) {
+        grid-area: w;
+    }
 
     @media screen and (max-width: 500px) {
     ul{
@@ -181,6 +195,8 @@
   "s"
   "t"
   "u"
+  "v"
+  "w"
     }
 }
 
@@ -200,6 +216,7 @@
             "q r"
             "s t"
             "u v"
+            "w w"
     }
 }
  
