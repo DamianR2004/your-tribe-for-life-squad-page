@@ -5,10 +5,10 @@
 {#each data.persons as person}
   <article class="card">
     <!-- <img src={person.avatar} alt="" class="card-image" /> -->
-    <picture class="card-image">
+    <picture>
         <source srcset="{person.avatar}?format=avif" type="image/avif">
         <source srcset="https://fdnd.directus.app/items/person{person.avatar}?format=webp" type="image/webp">
-        <img class="" src="https://fdnd.directus.app/items/person{person.avatar}" alt="The avatar of {person.name}" height="150" width="150"/> 
+        <img class="card-image" src="https://fdnd.directus.app/items/person{person.avatar}" alt="The avatar of {person.name}" height="150" width="150"/> 
     </picture>
     <section class="card-content">
       <div class="card-name">
@@ -64,8 +64,11 @@
 .card-image img {
     object-fit: contain;
 }
-  
 
+img {
+    margin-top: 10px;
+}
+  
   .card-content {
     padding: 20px;
     height: auto;
@@ -96,8 +99,8 @@
 }
 
   .card-text {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    padding-bottom: 50px;
     font-size: 18px;
     line-height: 1.5;
     text-align: center;
@@ -124,5 +127,6 @@
 
   h3 {
     font-size: 25px;
+    font-weight: 300;
   }
 </style>
