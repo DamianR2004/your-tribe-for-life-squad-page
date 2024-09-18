@@ -60,6 +60,10 @@
         transform: translateY(0);
     }
 }
+
+.card-image img {
+    object-fit: contain;
+}
   
 
   .card-content {
