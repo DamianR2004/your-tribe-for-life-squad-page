@@ -17,8 +17,6 @@ body{
     --text-white: #ffffff;
 }
 
-
-
 a:hover {
     cursor: url('../kwast2.svg'), auto;
 }
@@ -27,6 +25,10 @@ p {
     margin: 0;
     font-size: 1.2em;
     font-weight: bold;
+}
+
+.squad-link p {
+    font-size: 5rem;
 }
 
 .picture-container {

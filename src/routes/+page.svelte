@@ -23,9 +23,9 @@
              </a>
             </li>
         {/each}
-        <li><a href="/D"><p>D</p></a></li>
-        <li><a href="/E"><p>E</p></a></li>
-        <li><a href="/team"><p>Ons Team</p></a></li>
+        <li class="squad-link"><a href="/D"><p>D</p></a></li>
+        <li class="squad-link"><a href="/E"><p>E</p></a></li>
+        <li class="squad-link"><a href="/team"><p>Ons Team</p></a></li>
     </ul>
     {:else}
       <!-- This will show if no people are available -->

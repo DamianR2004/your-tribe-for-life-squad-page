@@ -4,9 +4,9 @@
 <main>
     {#if data.persons}
     <ul>
-        <li><a href="/D"><p>D</p></a></li>
-        <li><a href="/"><p>C</p></a></li>
-        <li><a href="/team"><p>Ons Team</p></a></li>
+        <li class="squad-link"><a href="/D"><p>D</p></a></li>
+        <li class="squad-link"><a href="/"><p>C</p></a></li>
+        <li class="squad-link"><a href="/team"><p>Ons Team</p></a></li>
             {#each data.persons as person}
             
             <li>
