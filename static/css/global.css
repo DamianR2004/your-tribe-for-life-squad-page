@@ -57,15 +57,11 @@ li {
     position: relative;
     background-color: var(--mondrian-white);
     list-style-type: none;
-<<<<<<< Updated upstream
-    border: 5px solid black;
-=======
     border: 5px solid var(--mondrian-black);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
->>>>>>> Stashed changes
     padding: 10px;
     display: flex;
     align-items: center;

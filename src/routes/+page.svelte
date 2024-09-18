@@ -15,12 +15,7 @@
                             <img src="{person.avatar}" width="150" height="150" alt="{person.name}" on:error={() => this.src='/path/to/fallback-avatar.svg'} />                        </picture>
                     {:else}
                         <!-- Fallback -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10" fill="#ffcc00"/>
-                            <circle cx="9" cy="10" r="1" fill="black"/>
-                            <circle cx="15" cy="10" r="1" fill="black"/>
-                            <path d="M8 16c1.333-1 2.667-1 4 0s2.667 1 4 0" fill="none" stroke="black" />
-                        </svg>
+                        <img src="/images/afbeelding.png" width="150" height="150" alt="">
                     {/if}
                 </div>
                 <p>{person.name}</p>
@@ -35,7 +30,7 @@
 
 <style>
     ul {
-        background-color: #000000;
+        background-color: var(--mondrian-black);
         display: grid;
         margin: 0;
         padding: 0;
@@ -59,44 +54,27 @@
 
 
     li:nth-of-type(1) { grid-area: a; }
-    li:nth-of-type(2) { grid-area: b; background-color: blue; }
+    li:nth-of-type(2) { grid-area: b; background-color: var(--mondrian-blue); color: var(--text-white);}
     li:nth-of-type(3) { grid-area: c; }
-    li:nth-of-type(4) { grid-area: b; background-color: yellow; }
+    li:nth-of-type(4) { grid-area: b; background-color: var(--mondrian-yellow); color: var(--text-white);}
     li:nth-of-type(5) { grid-area: e; }
-    li:nth-of-type(6) { grid-area: f; background-color: yellow; }
-<<<<<<< Updated upstream
-    li:nth-of-type(7) { grid-area: g; }
-    li:nth-of-type(8) { grid-area: s; background-color: blue; }
-    li:nth-of-type(9) { grid-area: t; background-color: red; }
-    li:nth-of-type(10) { grid-area: u; }
-    li:nth-of-type(11) { grid-area: i; background-color: red; }
-    li:nth-of-type(12) { grid-area: k; }
-    li:nth-of-type(13) { grid-area: m; }
-    li:nth-of-type(14) { grid-area: n; background-color: blue; }
-    li:nth-of-type(15) { grid-area: o; }
-    li:nth-of-type(16) { grid-area: p; background-color: red; }
-    li:nth-of-type(17) { grid-area: q; }
-    li:nth-of-type(18) { grid-area: r; }
-    li:nth-of-type(19) { grid-area: h; background-color: blue; color: white; }
-    li:nth-of-type(20) { grid-area: l; background-color: red; color: white; }
-    li:nth-of-type(21) { grid-area: j; }
-=======
-    li:nth-of-type(7) { grid-area: h; background-color: blue; color: white; }
-    li:nth-of-type(8) { grid-area: i; background-color: red; }
-    li:nth-of-type(9) { grid-area: r; background-color: yellow; }
+    li:nth-of-type(6) { grid-area: f; background-color: var(--mondrian-yellow); color: var(--text-white);}
+    li:nth-of-type(7) { grid-area: h; background-color: var(--mondrian-blue); color: var(--text-white); }
+    li:nth-of-type(8) { grid-area: i; background-color: var(--mondrian-red); color: var(--text-white);}
+    li:nth-of-type(9) { grid-area: r; background-color: var(--mondrian-yellow); color: var(--text-white);}
     li:nth-of-type(10) { grid-area: k; }
     li:nth-of-type(11) { grid-area: g; }
-    li:nth-of-type(12) { grid-area: s; background-color: #1500b2; }
-    li:nth-of-type(13) { grid-area: t; background-color: red; }
+    li:nth-of-type(12) { grid-area: s; background-color: var(--mondrian-blue); color: var(--text-white);}
+    li:nth-of-type(13) { grid-area: t; background-color: var(--mondrian-red); color: var(--text-white);}
     li:nth-of-type(14) { grid-area: u; }
     li:nth-of-type(15) { grid-area: m; }
-    li:nth-of-type(16) { grid-area: n; background-color: blue; }
+    li:nth-of-type(16) { grid-area: n; background-color: var(--mondrian-blue); color: var(--text-white);}
     li:nth-of-type(17) { grid-area: o; }
     li:nth-of-type(18) { grid-area: p; }
     li:nth-of-type(19) { grid-area: d; }
-    li:nth-of-type(20) { grid-area: j; background-color: yellow; }
+    li:nth-of-type(20) { grid-area: j; background-color: var(--mondrian-yellow); color: var(--text-white);}
     li:nth-of-type(21) { grid-area: v; }
-    li:nth-of-type(22) { grid-area: w; background-color: yellow; }
+    li:nth-of-type(22) { grid-area: w; background-color: var(--mondrian-yellow); color: var(--text-white);}
     li:nth-of-type(23) { grid-area: z; }
     li:nth-of-type(24) { grid-area: aa; }
     li:nth-of-type(23) { grid-area: ab; }
@@ -104,8 +82,6 @@
 
 
 
-
->>>>>>> Stashed changes
   
     @media screen and (max-width: 500px) {
     ul{
