@@ -15,7 +15,7 @@
                       <picture>
                           <source srcset="{person.avatar}?format=avif" type="image/avif" />
                           <source srcset="{person.avatar}?format=webp" type="image/webp" />
-                          <img src="{person.avatar}" width="150" height="150" alt="{person.name}" on:error={() => this.src='/path/to/fallback-avatar.svg'} />                        </picture>
+                          <img src="{person.avatar}" width="150" height="150" alt="" on:error={() => this.src='/path/to/fallback-avatar.svg'} />                        </picture>
                   {:else}
                       <!-- Fallback -->
                       <img src="/images/afbeelding.png" width="150" height="150" alt="">   
@@ -25,7 +25,7 @@
            </a>
           </li>
       {/each}
-      <li class="amir"><img src="images/FbMd9NxXkAIec9W.jpg" width="150" height="150" alt="Amir"/><p>Amir</p></li>
+      <li class="amir"><img src="images/FbMd9NxXkAIec9W.jpg" width="150" height="150" alt=""/><p>Amir</p></li>
   </ul>
 </main>
 
