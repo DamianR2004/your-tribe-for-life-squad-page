@@ -5,7 +5,6 @@
 {#if data.persons}
 {#each data.persons as person}
   <article class="card">
-    <!-- <img src={person.avatar} alt="" class="card-image" /> -->
     <picture class="card-image">
         <source srcset="{person.avatar}?format=avif" type="image/avif">
         <source srcset="https://fdnd.directus.app/items/person{person.avatar}?format=webp" type="image/webp">
@@ -26,11 +25,6 @@
 {/if}
 
 <style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
 
   .card {
     width: 300px;

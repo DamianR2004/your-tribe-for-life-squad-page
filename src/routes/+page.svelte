@@ -19,7 +19,7 @@
                         <img src="/images/afbeelding.png" width="150" height="150" alt="">
                     {/if}
                 </div>
-                <p>{person.name}</p>
+                <h2>{person.name}</h2>
              </a>
             </li>
         {/each}

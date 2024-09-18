@@ -1,11 +1,10 @@
-body{
+body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-size: 25px;
     overflow-x: hidden;
     cursor: url('../kwast1.svg'), auto;
-    font-family: sans-serif;
 }
 
 :root{
@@ -17,8 +16,25 @@ body{
     --text-white: #ffffff;
 }
 
+@font-face {
+    font-family: 'Ballistic';
+    src: url('../font/Ballistick.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 a:hover {
     cursor: url('../kwast2.svg'), auto;
+}
+
+.squad-link p,
+h2 {
+    font-family: Ballistic, 'sans serif';
+}
+
+h2 {
+    margin: 0;
 }
 
 p {
