@@ -17,8 +17,8 @@ body {
 }
 
 @font-face {
-    font-family: 'Ballistic';
-    src: url('../font/Ballistick.ttf') format('truetype');
+    font-family: 'Love';
+    src: url('../font/Love\ Cookies\ Font\ by\ Keithzo.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -30,7 +30,7 @@ a:hover {
 
 .squad-link p,
 h2 {
-    font-family: Ballistic, 'sans serif';
+    font-family: Love, 'sans serif';
 }
 
 h2 {
