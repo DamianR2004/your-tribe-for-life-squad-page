@@ -1,6 +1,8 @@
 <script>
-    export let data
+  export let data;
+
 </script>
+
 
 <main>
   {#if data.persons}
@@ -10,7 +12,7 @@
     <li class="squad-link"><a href="/E"><p>E</p></a></li>
       {#each data.persons as person}
           <li>
-            <a href="/person/{person.id}" class="full-link">
+            <a href="/person/{person.id}" class="full-link" id="popupButton">
               <div class="picture-container">
                   {#if person.avatar}
                       <picture>
@@ -29,8 +31,8 @@
       <li class="amir"><img src="images/FbMd9NxXkAIec9W.jpg" width="150" height="150" alt="Amir"/><h2>Amir</h2></li>
   </ul>
   {:else}
-  <!-- This will show if no people are available -->
-  <p>No data available</p>
+      <!-- This will show if no people are available -->
+      <p>No data available</p>
   {/if}
 </main>
 
@@ -89,5 +91,4 @@
           "a h"
     }
   }
-
 </style>
