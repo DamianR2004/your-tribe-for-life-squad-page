@@ -17,6 +17,8 @@ Op deze squadpage staat een overzicht van onze tribe met alle leden. Vanuit de h
 
 Onze squadpage is gebasseerd op de schilderijen van Mondriaan, zoals te zien is aan de primaire kleuren en de blokkige layout. Als extra zit er een custom cursor op de website van een penseel, passend bij het thema van een Mondriaan.
 
+![Untitled](https://github.com/user-attachments/assets/e1fe94b8-bb7b-4d36-b64f-0685ccf3c98e)
+
 [Link naar de squadpage](https://edu.nl/ywu9t)
 
 ## 📍 Kenmerken
