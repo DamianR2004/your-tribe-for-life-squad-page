@@ -2,6 +2,7 @@
   export let data;
 </script>
 
+{#if data.persons}
 {#each data.persons as person}
   <article class="detail-card">
    <div class="detail-image">
@@ -20,13 +21,12 @@
     </section>
   </article>
 {/each}
+{:else}
+     <!-- This will show if no people are available -->
+    <p>No data available</p>
+{/if}
 
 <style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
 
   .detail-card {
     width: 300px;
