@@ -1,7 +1,113 @@
-body{
+body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-size: 25px;
     overflow-x: hidden;
+    cursor: url('../kwast1.svg'), auto;
+}
+
+:root{
+    --mondrian-yellow: #FDDE06;
+    --mondrian-red: #E70503;
+    --mondrian-blue: #0300AD;
+    --mondrian-black: #050103;
+    --mondrian-white: #EAEFE9;
+    --text-white: #ffffff;
+}
+
+@font-face {
+    font-family: 'Love';
+    src: url('../font/Love\ Cookies\ Font\ by\ Keithzo.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+a:hover {
+    cursor: url('../kwast2.svg'), auto;
+}
+
+.squad-link p,
+h2 {
+    font-family: Love, 'sans serif';
+}
+
+h2 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.squad-link p {
+    font-size: 5rem;
+}
+
+.picture-container {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+.amir img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+li {
+    position: relative;
+    background-color: var(--mondrian-white);
+    list-style-type: none;
+    border: 5px solid var(--mondrian-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    container-type:inline-size;
+	container-name:card;
+
+      &:hover{
+        transform: scale(1.1);
+        transition: .25s;
+        z-index: 1000;
+  }
+}
+
+a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+@container card (width > 23rem){
+    li a {
+      flex-direction: row;
+    }
 }
