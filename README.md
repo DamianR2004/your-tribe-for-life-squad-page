@@ -13,7 +13,7 @@ Ontwerp en maak met een team een overzicht van jouw tribe met alle online visite
 
 ## 📄 Beschrijving
 
-Op deze squadpage staat een overzicht van onze tribe met alle leden. Vanuit de homepage kan je naar de verschillende squads gaan om specifieker te kijken. Ook is er de mogenlijkheid alleen onze teamleden te bekijken. Om meer details van een squadmember te bekijken, kun je klikken op hen kaartje in het grid. Een kaartje met nog meer details verschijnen vervolgends in beeld.
+Op deze squadpage staat een overzicht van onze tribe met alle leden. Vanuit de homepage kan je naar de verschillende squads gaan om specifieker te kijken. Ook is er de mogenlijkheid alleen onze teamleden te bekijken. Om meer details van een squadmember te bekijken, kun je klikken op hen kaartje in het grid. Een kaartje met nog meer details verschijnen vervolgens in beeld.
 
 Onze squadpage is gebasseerd op de schilderijen van Mondriaan, zoals te zien is aan de primaire kleuren en de blokkige layout. Als extra zit er een custom cursor op de website van een penseel, passend bij het thema van een Mondriaan.
 
