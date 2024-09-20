@@ -4,18 +4,20 @@
 
 {#if data.persons}
 {#each data.persons as person}
-  <article class="card">
-    <picture class="card-image">
+  <article class="detail-card">
+   <div class="detail-image">
+    <picture>
         <source srcset="{person.avatar}?format=avif" type="image/avif">
         <source srcset="https://fdnd.directus.app/items/person{person.avatar}?format=webp" type="image/webp">
-        <img class="" src="https://fdnd.directus.app/items/person{person.avatar}" alt="The avatar of {person.name}" height="150" width="150"/> 
+        <img class="detail-avatar" src="https://fdnd.directus.app/items/person{person.avatar}" alt="The avatar of {person.name}" height="150" width="150"/> 
     </picture>
-    <section class="card-content">
-      <div class="card-name">
-        <h2 alt="{person.name} {person.surname}">{person.name} {person.surname}</h2>
-        <h3 alt="The nickname of {person.name}, {person.nickname}">{person.nickname}</h3>
+   </div>
+    <section class="detail-content">
+      <div class="detail-names">
+        <h2 class="first-surname" alt="{person.name} {person.surname}">{person.name} {person.surname}</h2>
+        <h3 class="nickname" alt="The nickname of {person.name}, {person.nickname}">{person.nickname}</h3>
       </div>
-      <p class="card-text" alt="A discriptive bio">{person.bio}</p>
+      <p class="detail-bio" alt="A discriptive bio">{person.bio}</p>
     </section>
   </article>
 {/each}
@@ -26,7 +28,7 @@
 
 <style>
 
-  .card {
+  .detail-card {
     width: 300px;
     height: 500px;
     padding-bottom: 20px;
@@ -34,18 +36,23 @@
     overflow: hidden;
     text-align: center;
 
-    /* Black border with multi-colored effect */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     background-color: white;
-    border: 7px solid black; /* Main black border */
+    border: 7px solid black; 
     border-top-color: red;
     border-left-color: yellow;
     border-right-color: blue;
   }
 
-  .card-image {
+  .detail-image {
     width: 150px;
     height: 150px; 
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     overflow: hidden;
     transform: translateY(-100%);
     animation: slide-in-top 3s forwards ease-in-out;
@@ -60,12 +67,19 @@
     }
 }
 
-.card-image img {
+.detail-image .detail-avatar {
     object-fit: contain;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.detail-avatar {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
   
-
-  .card-content {
+  .detail-content {
     padding: 20px;
     height: auto;
     display: flex;
@@ -74,7 +88,7 @@
     text-align: center;
   }
 
-  .card-name {
+  .detail-names {
     margin-top: auto;
     font-size: 24px;
     font-weight: bold;
@@ -94,9 +108,9 @@
 	}
 }
 
-  .card-text {
-    margin-top: 10px;
-    margin-bottom: 10px;
+  .detail-bio {
+    margin-top: 20px;
+    padding-bottom: 50px;
     font-size: 18px;
     line-height: 1.5;
     text-align: center;
@@ -117,11 +131,12 @@
     }
   }
 
-  h2 {
-    font-size: 30px;
+  .first-surname {
+    font-size: 27px;
   }
 
-  h3 {
-    font-size: 25px;
+  .nickname {
+    font-size: 22px;
+    font-weight: 300;
   }
 </style>
